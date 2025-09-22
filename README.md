@@ -68,7 +68,8 @@ python selfcal_auto_folder.py   --dir "C:/path/to/images"   --dict DICT_6X6_50  
 
 ```mermaid
 flowchart LR
-  A[讀取資料夾影像] --> B{ChArUco 掃 ratio<br/>(0.60~0.80)}
+  A[讀取資料夾影像] --> B{ChArUco 掃 ratio
+(0.60–0.80)}
   B -->|偵測成功| C[Charuco 標定 calibrateCameraCharucoExtended]
   B -->|偵測失敗| D[純棋盤自動掃 4~10 x 4~10]
   D -->|找到最佳內角點| E[棋盤標定 calibrateCamera]
